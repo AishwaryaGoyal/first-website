@@ -1,0 +1,41 @@
+h1 {
+    color: red;
+  }
+  p {
+    color: green;
+  }
+  a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    color:pink;
+  }
+
+  .center {
+      margin: 10px 50px 20px;
+  }
+      
+  .animate {
+    position: absolute;
+    bottom:0;
+    left:0;
+    animation-duration: 20s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+  
+    to {
+      margin-left: -100%;
+      width: 100%;
+    }
+  }
+  
