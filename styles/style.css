@@ -1,41 +1,82 @@
 h1 {
-    color: red;
-  }
-  p {
-    color: green;
-  }
-  a:link {
-    color: blue;
-  }
-  
-  a:visited {
-    color:pink;
+  color: red;
+}
+p {
+  color: green;
+}
+
+p:active {
+  background: #eee;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: pink;
+}
+
+a:active {
+  color: red;
+}
+
+.center {
+  margin: 30px 50px 20px;
+}
+
+.indexContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 200px 40px;
+}
+
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url(/fonts/Lobster-Regular.ttf) format("ttf");
+}
+
+.header {
+  grid-column: 1 /-1;
+  grid-row: 1 /2;
+  align-content: stretch;
+  font-family: Lobster-Regular, cursive;
+}
+
+video::backdrop {
+  background-color: #448;
+}
+
+.content {
+  grid-row: 2 /3;
+}
+
+.footerAnimate {
+  grid-column: 1 /-1;
+  grid-row: 3 /4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
 
-  .center {
-      margin: 10px 50px 20px;
+  to {
+    margin-left: -100%;
+    width: 100%;
   }
-      
-  .animate {
-    position: absolute;
-    bottom:0;
-    left:0;
-    animation-duration: 20s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
+}
 
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-  
-    to {
-      margin-left: -100%;
-      width: 100%;
-    }
-  }
-  
+.picturesContainer {
+  display: grid;
+  background-color: antiquewhite;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
