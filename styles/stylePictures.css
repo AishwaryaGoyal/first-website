@@ -1,0 +1,6 @@
+.container {
+  display: grid;
+  background-color: antiquewhite;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+}

@@ -1,0 +1,50 @@
+a:link {
+  color: black;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+a:active {
+  color: white;
+  background-color: black;
+}
+
+a:hover {
+  background-color: gainsboro;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 70px 70px 100px 1000px 80px 70px;
+  align-items: center;
+  grid-gap: 5px;
+  grid-column: 1 /-1;
+}
+
+input {
+  border-radius: 30px;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 1000px;
+}
+
+input:hover {
+  background-color: #1051;
+}
+
+video::backdrop {
+  background-color: #448;
+}
+
+.footer {
+  grid-column: 1 /-1;
+}
