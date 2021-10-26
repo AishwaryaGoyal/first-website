@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8px;
+}
+
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  height: 70px;
+  margin-left: 15px;
+}
+
+a:link {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+  background-color: transparent;
+  text-decoration: none;
+  align-self: center;
+}
+
+a:hover {
+  background-color: whitesmoke;
+}
+
+a:visited {
+  color: black;
+}
+
+.fab {
+  margin: 10px;
+  color: crimson;
+  border-radius: 10px;
+}
+
+input {
+  border-radius: 30px;
+  border-style: none;
+  background-color: whitesmoke;
+  height: 50px;
+  width: 1300px;
+  align-self: center;
+}
+
+input:hover {
+  background-color: gainsboro;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.fas {
+  margin: 10px;
+  color: dimgray;
+  border-radius: 10px;
+}

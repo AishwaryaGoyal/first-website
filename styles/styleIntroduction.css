@@ -1,23 +1,11 @@
+.content {
+  grid-column: 1/ -1;
+}
+
 p {
   color: green;
 }
 
 p:active {
   background: #eee;
-}
-
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: pink;
-}
-
-a:active {
-  color: red;
-}
-
-.center {
-  margin: 30px 50px 20px;
 }
