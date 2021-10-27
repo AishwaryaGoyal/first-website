@@ -1,17 +1,11 @@
-.container {
-  /*display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* grid-template-rows: repeat(auto-fill, minmax(200px, auto));
-  grid-auto-flow: dense;*/
+.content {
+  grid-column: 1 / -1;
   column-count: 5;
   column-gap: 15px;
 }
 
 img {
   width: 100%;
-  /*height: auto;*/
-  /*object-fit: contain;*/
   background-color: antiquewhite;
-  margin-bottom: 15px;
   border-radius: 30px;
 }
