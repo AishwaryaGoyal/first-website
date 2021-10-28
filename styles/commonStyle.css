@@ -108,20 +108,14 @@ input::-webkit-input-placeholder {
   background-color: white;
 }
 
-img:hover,
-.save-button,
-.share-button,
-.more-button {
-  display: block;
+.imageContainer:hover img,
+.imageContainer:hover video {
   cursor: zoom-in;
   opacity: 0.6;
 }
 
-video:hover,
-.save-button,
-.share-button,
-.more-button {
+.imageContainer:hover .save-button,
+.imageContainer:hover .share-button,
+.imageContainer:hover .more-button {
   display: block;
-  cursor: zoom-in;
-  opacity: 0.6;
 }
