@@ -9,7 +9,6 @@
 }
 
 a:link {
-  border-radius: 25px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,8 +17,7 @@ a:link {
 .header {
   grid-column: 1 / -1;
   display: flex;
-  height: 70px;
-  margin-left: 15px;
+  height: 4.4rem;
 }
 
 .header > a:link {
@@ -31,23 +29,46 @@ a:link {
   color: black;
 }
 
-.header > a:hover {
+.btn-pin:hover,
+.btn-home:hover,
+.btn-today:hover,
+.btn-notif:hover,
+.btn-msg:hover,
+.btn-acnt:hover,
+.btn-down:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
 
 .fa-pinterest {
-  margin: 10px;
   color: crimson;
-  border-radius: 10px;
+}
+
+.btn-pin {
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+
+.btn-home {
+  padding: 15px;
+  margin-right: 2px;
+  border-radius: 25px;
+}
+
+.btn-today {
+  padding: 15px;
+  margin-right: 12px;
+  border-radius: 25px;
 }
 
 input {
   border-radius: 30px;
   border-style: none;
   background-color: whitesmoke;
-  height: 50px;
-  width: 1300px;
+  height: 3rem;
+  width: 80rem;
   align-self: center;
+  flex-grow: 3;
 }
 
 input:hover {
@@ -63,22 +84,85 @@ input::-webkit-input-placeholder {
 .fa-comment-dots,
 .fa-user-circle,
 .fa-chevron-down {
-  margin: 10px;
   color: dimgray;
-  border-radius: 10px;
+}
+
+.btn-notif,
+.btn-msg,
+.btn-acnt,
+.btn-down {
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.btn-notif {
+  margin-left: 20px;
+}
+
+/*Header for mobile device and tablets */
+.btn-mobile-foryou,
+.btn-mobile-today {
+  display: none;
+  padding: 15px;
+}
+
+@media (max-width: 960px) {
+  .btn-pin,
+  .btn-home,
+  .btn-today,
+  .input-search,
+  .btn-notif,
+  .btn-msg,
+  .btn-acnt,
+  .btn-down {
+    display: none;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    z-index: 200;
+    background-color: white;
+  }
+
+  .btn-mobile-foryou,
+  .btn-mobile-today {
+    display: block;
+  }
+}
+
+/* Content CSS */
+.content {
+  grid-column: 1 / -1;
+  column-count: auto;
+  column-width: 12rem;
+  column-gap: 15px;
 }
 
 /*Content on hover CSS */
-.imageContainer {
+.img-video-container {
   position: relative;
   margin-bottom: 15px;
   background: rgb(1, 1, 1);
   background-clip: content-box;
-  border-radius: 30px;
-  border-style: none;
+  border-radius: 20px;
 }
 
-.save-button {
+img,
+video {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+video::backdrop {
+  background-color: #448;
+}
+
+.btn-save {
   display: none;
   position: absolute;
   right: 15px;
@@ -86,9 +170,10 @@ input::-webkit-input-placeholder {
   background-color: crimson;
   color: white;
   padding: 15px;
+  border-radius: 25px;
 }
 
-.share-button {
+.btn-share {
   display: none;
   position: absolute;
   bottom: 25px;
@@ -96,9 +181,10 @@ input::-webkit-input-placeholder {
   color: dimgray;
   padding: 10px;
   background-color: white;
+  border-radius: 25px;
 }
 
-.more-button {
+.btn-more {
   display: none;
   position: absolute;
   bottom: 25px;
@@ -106,16 +192,26 @@ input::-webkit-input-placeholder {
   color: dimgray;
   padding: 10px;
   background-color: white;
+  border-radius: 25px;
 }
 
-.imageContainer:hover img,
-.imageContainer:hover video {
+.img-video-container:hover img,
+.img-video-container:hover video {
   cursor: zoom-in;
   opacity: 0.6;
 }
 
-.imageContainer:hover .save-button,
-.imageContainer:hover .share-button,
-.imageContainer:hover .more-button {
+.img-video-container:hover .btn-save,
+.img-video-container:hover .btn-share,
+.img-video-container:hover .btn-more {
   display: block;
+}
+
+/*Footer CSS */
+.footer {
+  grid-column: 1 /-1;
+}
+
+.footer > p {
+  color: blueviolet;
 }

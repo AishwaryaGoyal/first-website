@@ -5,7 +5,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/commonStyle.css" />
-    <link rel="stylesheet" href="styles/stylePictures.css" />
     <link rel="shortcut icon" href="favicons/images-solid.svg" />
     <title>Photos</title>
   </head>
@@ -13,297 +12,273 @@
   <body>
     <div class="container">
       <div class="header">
-        <a href="pictures.html" style="background-color: black"
+        <a class="btn-pin" href="pictures.html" style="background-color: black"
           ><i class="fab fa-pinterest fa-2x"></i
         ></a>
-
-        <a
-          href="index.html"
-          style="align-self: center; padding: 15px; margin-right: 2px"
-          ><b>Home</b>
-        </a>
-
-        <a
-          href="introduction.html"
-          role="button"
-          style="align-self: center; padding: 15px; margin-right: 12px"
+        <a class="btn-home" href="index.html"><b>Home</b> </a>
+        <a class="btn-today" href="introduction.html" role="button"
           ><b>Today</b></a
         >
-
-        <input type="text" placeholder="  🔍  Search" />
-
-        <a href="pictures.html" style="margin-left: 20px"
+        <input class="input-search" type="text" placeholder="  🔍  Search" />
+        <a class="btn-notif" href="pictures.html"
           ><i class="fas fa-bell fa-lg"></i
         ></a>
-
-        <a href="pictures.html"><i class="fas fa-comment-dots fa-lg"></i></a>
-
-        <a href="about.html"><i class="fas fa-user-circle fa-lg"></i></a>
-
-        <a href="about.html"><i class="fas fa-chevron-down"></i></a>
+        <a class="btn-msg" href="pictures.html"
+          ><i class="fas fa-comment-dots fa-lg"></i
+        ></a>
+        <a class="btn-acnt" href="about.html"
+          ><i class="fas fa-user-circle fa-lg"></i
+        ></a>
+        <a class="btn-down" href="about.html"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+        <!--For mobile and tablet devices-->
+        <a
+          class="btn-mobile-foryou"
+          href="pictures.html"
+          role="button"
+          style="border-bottom: 5px solid black"
+          ><b>For you</b></a
+        >
+        <a class="btn-mobile-today" href="introduction.html" role="button"
+          ><b>Today</b></a
+        >
       </div>
 
       <div class="content">
-        <div class="imageContainer">
-          <a href="images/anime-girl-blue.jpg"
-            ><img src="images/anime-girl-blue.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/anime-girl.jpg"
-            ><img src="images/anime-girl.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a class="share-button" href=""
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a class="more-button" href=""
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/artless-dtiys.jpg"
-            ><img src="images/artless-dtiys.jpg" width="200"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/avatar-style-girl.jpg"
-            ><img src="images/avatar-style-girl.jpg" width="200"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/cat-with-cake.jpg"
-            ><img src="images/cat-with-cake.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/cat-with-flowers.jpg"
-            ><img src="images/cat-with-flowers.jpg" width="400"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/fairy-girl.jpg"
-            ><img src="images/fairy-girl.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/girl-flowers.jpg"
-            ><img src="images/girl-flowers.jpg" width="400"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/girl-shortdress.jpg"
-            ><img src="images/girl-shortdress.jpg" width="400"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/icecream-chibi.jpg"
-            ><img src="images/icecream-chibi.jpg" width="400"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/kawaii-pumpkindog.jpg"
-            ><img src="images/kawaii-pumpkindog.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/magic-again.jpg"
-            ><img src="images/magic-again.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/magical-girl.jpg"
-            ><img src="images/magical-girl.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/magician-bighat.jpg"
-            ><img src="images/magician-bighat.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/mushroom-hat.jpg"
-            ><img src="images/mushroom-hat.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/overmoon-withcat.jpg"
-            ><img src="images/overmoon-withcat.jpg" width="400"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/pastels-pencil-chibis.jpg"
-            ><img src="images/pastels-pencil-chibis.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/rats-cupcake.jpg"
-            ><img src="images/rats-cupcake.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
-          <a href="images/serving-kawaii.jpg"
-            ><img src="images/serving-kawaii.jpg" width="300"
-          /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
-          ></a>
-          <a href="" class="more-button"
-            ><i class="fas fa-ellipsis-h fa-lg"></i
-          ></a>
-        </div>
-
-        <div class="imageContainer">
+        <div class="img-video-container">
           <a href="images/short-haired.jpg"
-            ><img src="images/short-haired.jpg" width="300"
+            ><img src="images/dora-boots.jpg" width="10rem"
           /></a>
-          <a class="save-button" href="" role="button"><b>Save</b> </a>
-          <a href="" class="share-button"
-            ><i class="fas fa-upload fa-lg"></i
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
           ></a>
-          <a href="" class="more-button"
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/short-haired.jpg"
+            ><img src="images/short-haired.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/anime-girl-blue.jpg"
+            ><img src="images/anime-girl-blue.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/anime-girl.jpg"
+            ><img src="images/anime-girl.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a class="btn-share" href=""><i class="fas fa-upload fa-lg"></i></a>
+          <a class="btn-more" href=""
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/artless-dtiys.jpg"
+            ><img src="images/artless-dtiys.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/avatar-style-girl.jpg"
+            ><img src="images/avatar-style-girl.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/cat-with-flowers.jpg"
+            ><img src="images/cat-with-flowers.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/fairy-girl.jpg"
+            ><img src="images/fairy-girl.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/girl-flowers.jpg"
+            ><img src="images/girl-flowers.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/icecream-chibi.jpg"
+            ><img src="images/icecream-chibi.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/kawaii-pumpkindog.jpg"
+            ><img src="images/kawaii-pumpkindog.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/magic-again.jpg"
+            ><img src="images/magic-again.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/magical-girl.jpg"
+            ><img src="images/magical-girl.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/magician-bighat.jpg"
+            ><img src="images/magician-bighat.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/mushroom-hat.jpg"
+            ><img src="images/mushroom-hat.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/overmoon-withcat.jpg"
+            ><img src="images/overmoon-withcat.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/pastels-pencil-chibis.jpg"
+            ><img src="images/pastels-pencil-chibis.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/rats-cupcake.jpg"
+            ><img src="images/rats-cupcake.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/serving-kawaii.jpg"
+            ><img src="images/serving-kawaii.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/cat-with-cake.jpg"
+            ><img src="images/cat-with-cake.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="img-video-container">
+          <a href="images/girl-shortdress.jpg"
+            ><img src="images/girl-shortdress.jpg" width="10rem"
+          /></a>
+          <a class="btn-save" href="" role="button"><b>Save</b> </a>
+          <a href="" class="btn-share"><i class="fas fa-upload fa-lg"></i></a>
+          <a href="" class="btn-more"
             ><i class="fas fa-ellipsis-h fa-lg"></i
           ></a>
         </div>
       </div>
+
+      <div class="footer"></div>
     </div>
   </body>
 </html>

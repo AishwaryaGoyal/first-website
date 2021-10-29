@@ -2,7 +2,7 @@ p {
   color: green;
 }
 
-.content {
+.about {
   grid-column: 1/ -1;
   margin: 30px 50px 20px;
 }

@@ -6,69 +6,79 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/styleIntroduction.css" />
-     <link rel="stylesheet" href="styles/commonStyle.css" />
+    <link rel="stylesheet" href="styles/commonStyle.css" />
     <meta charset="utf-8" />
     <title>Introduction</title>
   </head>
   <body>
     <div class="container">
-      <nav class="header">
-        <a href="pictures.html"
-          ><i class="fab fa-pinterest fa-2x"></i></a>
-
+      <div class="header">
+        <a class="btn-pin" href="pictures.html" role="button"
+          ><i class="fab fa-pinterest fa-2x"></i
+        ></a>
+        <a class="btn-home" href="index.html" role="button"><b>Home</b></a>
         <a
-          href="index.html"
-          style="align-self: center; padding: 15px; margin-right: 2px"
-          ><b>Home</b>
-        </a>
-
-        <a
+          class="btn-today"
           href="introduction.html"
-          style="
-            background-color: black;
-            color: white;
-            align-self: center;
-            padding: 15px;
-            margin-right: 12px;
-          "
+          style="background-color: black; color: white"
           ><b>Today</b></a
         >
-
-        <input type="text" placeholder="  🔍  Search" />
-
-        <a href="pictures.html" style=" margin-left: 20px"
+        <input class="input-search" type="text" placeholder="  🔍  Search" />
+        <a class="btn-notif" href="pictures.html" role="button"
           ><i class="fas fa-bell fa-lg"></i
-</a>
+        ></a>
+        <a class="btn-msg" href="pictures.html" role="button"
+          ><i class="fas fa-comment-dots fa-lg"></i
+        ></a>
+        <a class="btn-acnt" href="about.html" role="button"
+          ><i class="fas fa-user-circle fa-lg"></i
+        ></a>
+        <a class="btn-down" href="about.html" role="button"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
 
-        <a href="pictures.html"
-          ><i class="fas fa-comment-dots fa-lg"></i></a>
+        <!--For mobile and tablet devices-->
+        <a class="btn-mobile-foryou" href="index.html" role="button"
+          ><b>For you</b></a
+        >
+        <a
+          class="btn-mobile-today"
+          href="introduction.html"
+          role="button"
+          style="border-bottom: 5px solid black"
+          ><b>Today</b></a
+        >
+      </div>
 
-        <a href="about.html"
-          ><i class="fas fa-user-circle fa-lg"></i></a>
-
-        <a href="about.html"
-          ><i class="fas fa-chevron-down"></i></a>
-      </nav>
-
-      <div class="content">
+      <div class="introduction">
         <p>Hi! I am Aishwarya.</p>
-
         <p>I am an artist.</p>
-
         <p>
           I have been learning <em>painting</em> since 4 years. You can find me
           on the following social websites 👇
         </p>
 
         <ul>
-          <li><a href="https://www.instagram.com/bling2292/">Instagram <i class="fab fa-instagram fa-2x"></i></a></li>
+          <li>
+            <a href="https://www.instagram.com/bling2292/"
+              >Instagram <i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </li>
           <li>
             <a href="https://www.facebook.com/aishwarya.goyal.37625/"
-              >Facebook <i class="fab fa-facebook fa-2x" style="color: blue;"></i></a
-            >
+              >Facebook <i class="fab fa-facebook fa-2x" style="color: blue"></i
+            ></a>
           </li>
-          <li><a href="https://twitter.com/Aurora2292">Twitter <i class="fab fa-twitter fa-2x" style="color: blue;"></i></a></li>
-          <li><a href="mailto:aishwarya.v.goyal@gmail.com">Gmail <i class="fas fa-envelope-open fa-2x"></i></a></li>
+          <li>
+            <a href="https://twitter.com/Aurora2292"
+              >Twitter <i class="fab fa-twitter fa-2x" style="color: blue"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:aishwarya.v.goyal@gmail.com"
+              >Gmail <i class="fas fa-envelope-open fa-2x"></i
+            ></a>
+          </li>
         </ul>
       </div>
     </div>
