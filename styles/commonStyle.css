@@ -18,6 +18,13 @@ a:link {
   grid-column: 1 / -1;
   display: flex;
   height: 4.4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 100%;
+  z-index: 200;
+  background-color: white;
 }
 
 .header > a:link {
@@ -83,7 +90,9 @@ input::-webkit-input-placeholder {
 .fa-bell,
 .fa-comment-dots,
 .fa-user-circle,
-.fa-chevron-down {
+.fa-chevron-down,
+.fa-home,
+.fa-search {
   color: dimgray;
 }
 
@@ -118,19 +127,13 @@ input::-webkit-input-placeholder {
     display: none;
   }
 
-  .header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 100%;
-    bottom: 100%;
-    z-index: 200;
-    background-color: white;
-  }
-
   .btn-mobile-foryou,
   .btn-mobile-today {
     display: block;
+  }
+
+  .footer {
+    display: flex !important;
   }
 }
 
@@ -209,9 +212,22 @@ video::backdrop {
 
 /*Footer CSS */
 .footer {
-  grid-column: 1 /-1;
+  display: none;
+  grid-column: -1/ 1;
+  justify-self: center;
+  align-items: center;
+  background-color: white;
+  height: 3rem;
+  border-radius: 25px;
+  position: sticky;
+  top: 70%;
+  bottom: 0;
+  z-index: 300;
 }
 
-.footer > p {
-  color: blueviolet;
+.btn-home-footer,
+.btn-search,
+.btn-msg-footer,
+.btn-acnt-footer {
+  margin: 1rem;
 }
